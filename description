@@ -1,1 +1,291 @@
+Cloud Services ---> Gmail /salesforce/netflix
+On-premise also known as traditional computing
+Cloud Computing 
+   -----> Computing services are provided for you 
+          Renting computing resources 
+          Flexibility and scalability 
+          Access to latest technologies 
+          Enterprise-level data protection
+          Reduced IT staff and admin costs 
+If the cloud is set up right , the user won't even know that a failure happened
+Technology Pillars of cloud COMPUTING 
+
+VIRTULIZATION ---> not a one-to-one relationship between a physical server and 
+a logical server
+HYPERVISOR ---> Allows multiple OSs to share the same host ,and manage 
+the resources allocation to Virtual OSs
+
+Cloud Service models
+Infrastructure as a service ,
+Platform as a service,
+Software as  a service
+
+Infrastructure as a service --
+
+  Virtual hardware that replaces physical 
+  can scale up or down based on needs
+  you pay for what you use 
+  Internet of things(IOT)
+  High performance computing
+  Data storage , backup ,and recovery
+
+IaaS -- compute,Block Storage, 
+It covers three fundamental aspects
+compute --> which is used for providing resources on demand 
+block storage ---> which is used for providing blocks that can be used for
+ storing information
+network --> which are all resources required for providing users networking capabilities
+
+Platform as a service 
+
+This layer add OSs and software
+RunTime Environments
+allow developers to focous on apps
+Provisioning and deployment
+Loadbalancing and autoscaling 
+APIs,Devops,Integration and ML
+
+Covers three fundamental aspects
+
+object storage --> providing resources on how objects are stored
+Identity --> which provides a layer for dealing with user authentication
+Runtime --> It also provides a runtime applications to run on 
+Queue ---> there's a queue which is based for batch and message processing 
+Database --> 
+
+
+Software as a Service -->
+apps are accessed over the internet 
+It is the largets of the three models 
+Likely the one you most familiar with
+Monthly or yearly subscription fee 
+Internet connection is required
+The biggest concern is a data security
+
+Monitoring,Content,Collaboration,Communication,Finance
+
+Cloud deployment models
+
+These clouds offer the best in scalibility , realiability , flexibility ,
+geographical Independence ,and cost effectiveness
+
+public clouds 
+   
+whatever the client wants , the client gets 
+If the client needs more resources ,it simply scales up and uses more
+The client pays more , that's part of the deal
+operated by the third-party companies
+
+Private Cloud 
+
+---> purchase Virtualization software 
+     set up individual clouds 
+     within their own network 
+     Limited scalability
+     Control all its own security
+
+
+Hybrid Cloud 
+
+   Combines public and private clouds 
+   Storage of sensitive info privately
+   Tight control of data 
+   Enjoy features of public clouds
+
+
+Characteristics of cloud computing 
+
+Elastic -- grow or shrink as the client's needs change 
+Resource pooling -- divided among clients as needed
+Rapid elasticity -- fast allocation of resources 
+self-service -- automatically access any resources , at any time 
+Scalibility -- ability to use more or fewer resources 
+broad network access -- resources accessible over the network
+pay as you go -- you pay for what you use and when you use it 
+Availability -- resources are accessible when a clients needs them
+
+Shared Responsibility Models 
+Compute ,storage/database, Networking ,Regions ,Availability zones ,Edge locations
+
+Two or more devices that communicate with each other
+
+Network adapter --> every device today has a built-in adapter
+Transmission method --> how data travels from device to device 
+Protocol --> Language used for communication 
+
+Protocols 
+
+Transmission Control Protocol / Internet Protocol
+
+The protocol of the internet
+
+Process application : Telnet,RDP,SSH,FTP,DHCP,SMTP,HTTP(S)
+Host-to-host: TCP and UDP
+Internet Protocols: IP,ICMP,ARP,RARP -- IPV6
+Network access: Ethernet,Fast,Gigabit,and wi-Fi
+
+Protocols at each layer are responsible for different tasks
+Most Protocols are at the process applocation layer
+
+Cloud Access Types 
+
+HTTP(S) -- Hypertext Transfer Protocol(Secure)
+RDP -- Remote DeskTop Protocol 
+SSH -- Secure Shell 
+VPN -- virtual private network 
+Direct -- Direct connection to the cloud Provider
+
+HTTPS -- Secure TCP/IP application protocol designed to fetch web pages 
+and encrypt data that is transmitted between a web server and its client
+
+client connecting to cloud resources --> most often done through a web browser 
+ and the HyperText Transfer Protocol secure 
+
+HTTP is the alternative to HTTPS, and it does not encrypt transmissions
+Mostly using web browsers --> Designed to request web pages from web servers
+SSL Provider --> Responsible for security of the cloud
+(infrastructure & services)
+
+RDP (Remote Desktop Protocol)
+
+Extra Capacity -- almost instantaneously
+end-to-end testing -- using different platforms
+staging -- different environments
+
+Is a protocol used to log into an online Windows Server instance
+
+RDP from the device that will be logging in to the virtual instance
+Windows includes an   RDP client called Remote DEsktop Connection 
+There are RDP Clients for other Systems
+RDP requires the use of a public/private key pair to authenticate users 
+
+SSH -- Secure Shell 
+lets connect to a virtual machine running
+
+VPN -- A VPN is a secure and private network connection that occurs through a public network
+PC or laptop -- at home,hotel or another public place
+
+VPN tunnel --> secure internet "tunneled" connection 
+Corporate server --> VPN server in the corporate network
+
+Direct Connect Criteria
+
+There is a large amount of data transferred between the cloud and the on-site network
+
+Load Balancing 
+
+Conceived before the cloud 
+Act like the web server to the outside world
+Load Balancer sends the request to the real servers
+Configurations 
+
+Cross-region -- based on IP address routing 
+Content-based --- based on type requests
+
+
+our organization can have performance benefits for high traffic networks and heavily used 
+systems.
+
+Benefits 
+Performance ,scalibility ,Realibility 
+
+
+Domain Name System -- The site's name means nothing a device requires an Ip address to connect to site 
+THE PORT NUMBER IS COMBINED WITH THE IP ADDRESS
+
+DNS -- 53
+HTTP -- 80
+HTTPS -- 443
+RDP -- 3389
+SSH -- 22
+
+Firewall is a hardware and sometimes software solution that serves a network security checkpoint
+Firewall filter network traffic based on rules defined by an administrator.
+
+Firewalls
+
+Anti-malware check files for threats
+firewalls protect you from network traffic that could be dangerous
+
+How Firewalls Work 
+
+public,private 
+
+firewalls configuration 
+
+default deny , ACL , Inbound/Outbound
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
