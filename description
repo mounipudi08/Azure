@@ -300,6 +300,74 @@ Network
 Images
 Virtual Disk
 
+Creating a Virtual Machine and Enabling Remote Access with AZURE CLI
+
+
+az login 
+az account set --subscription "Demonstration Account"
+
+
+Let's create a Windows VM
+az group list --output table
+
+
+Create a resource group if needed
+  
+az group create \
+    --name "psdemo-rg"
+    --location "centralus"
+
+Creating a Windows Virtual Machine 
+ az vm create \
+     --resource-group "psedemo-rg" \
+     --name "psdemo-win-cli"
+     --image "win2019datacenter" \
+     --admin-username "demoadmin" \
+     --admin-password "password123"
+
+Open RDP for remote access,it may already be open
+az vm open-port \
+    --resource-group "psdemo-rg"
+    --name "psdemo-win-cli"
+    --port "3389"
+
+Get the IP Addresses for Remote Access
+
+az vm list-ip-addresses \
+       --resource-group "psdemo-rg"
+       --name"psdemo-win-cli"
+       --output table
+
+Creating a VM with AZURE POWER SHELL
+
+
+Connect-AzAccount -SubscriptionName 'Demonstartion Account'
+
+#Ensure you're pointed at your correct subscription
+
+Set -AzContext -SubscriptionName 'demonstration Account'
+
+
+#Create a Resource Group
+New -AzResourceGroup -Name "psdemo-rg" -Location "CentralUS"
+
+
+#Create a credential to use in the VM creation 
+
+$username = 'demoadmin'
+$password = ConvertTo-SecureString 'password123' -AsPlainText -Force
+$WindowsCred = New-Object System.Management.Automation.PSCredential($username,$password)
+
+New-AzVM
+   -ResourceGroupName 'psdemo-rg'
+    -Name 
+    -Image
+    -Credential $WindowsCred
+     OpenPorts 3389
+
+
+
+
 
 
 
