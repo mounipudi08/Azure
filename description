@@ -215,6 +215,82 @@ firewalls configuration
 
 default deny , ACL , Inbound/Outbound
 
+Aspects Redundancy Plans 
+redundancy referred as fault tolerance
+1) HardWare -- storage,processes,memory,or network devices
+2)Network -- always available
+3)Geographic - several locations will have replicas
+4)Process
+5)Software
+6)Data
+
+High Availability --  service availability is determined in terms of nines
+(uptime the provider guarantees)
+
+
+Disaster Recovery -- Ability to be operational after a  disaster
+
+cloud providers can help with disaster planning
+Depending on the SLA, the disaster recovery could fall on the provider
+
+Recovery Objectives
+
+1)Recovery Point Objective
+2)Recovery Time Objective
+
+
+Recovery Point Objective -- max age of files that must be recovered from backups
+to restore operations
+
+ servers --> virtualization --> Cloud Computing
+
+Cloud Computing 
+
+Cloud Computing enables companies to consume a compute resource ,
+such as a virtual machine , storage , or an application 
+as a utility -- just like electricity --rather than having to build 
+and maintain computing infrastructures in-house
+
+Highavailability -- usually to protect us against software and hardware failures
+
+Cloud Provider takes care of high availability and disaster recovery(DR)
+
+HA: local failure such as a disk,power supply,etc
+DR: natural/human disaster like a fire,flood,earthquake etc
+
+Fault Tolerance:
+ very similar to HA but offers zero downtime
+
+IaaS
+
+--Azure Compute(Virtual Machines)
+-- Azure Storage
+
+PaaS
+
+Azure Logic apps
+Azure Functions
+Azure Web Jobs
+Azure Automation
+
+SaaS --
+
+  Share point
+   One Drive for Business
+    Microsoft Teams
+   Power Platform 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
