@@ -360,10 +360,148 @@ $WindowsCred = New-Object System.Management.Automation.PSCredential($username,$p
 
 New-AzVM
    -ResourceGroupName 'psdemo-rg'
-    -Name 
+    -Name  'psdemo-win-az"
     -Image
     -Credential $WindowsCred
      OpenPorts 3389
+
+Get AzPublic IP Address `
+   -ResourceGroupName 'psdemo-rg' `
+   -Name 'psdemo-win-az' | Select Object IpAddress
+
+#Clean up after this demo
+Remove -AzResourceGroup -nAME 'psdemo-rg'
+
+ARM Templates
+
+JSON file that defines your resources 
+Building Block for automation
+ARM Template submitted to AZURE RESOURCE MANAGER for deployment using the tools 
+that we focus on this module The AZURE PORTAL,AZURE CLI,AZURE POWER SHELL.
+Once the ARM Template is deployed it affects the changes defined inside the ARM Template ,changes such as 
+creating the resources edit existing resources or their properties or even deleting resources
+Export a ARM TEMPLATE in AZURE PORTal
+write your own 
+Deploy from the quickstart template library
+
+Deploying ARM TEmplates  --
+AZURE PORTAL 
+AZURE CLI
+PowerShell(Az Module)
+REST API
+AZURE CLOUD SHELL
+
+This module is about creating.managing and running containers in azure
+
+Running Containers in Azure 
+
+Docker tools --> how to use Docker tools to create container images
+we'll loook at what a container is ,the process for building a container
+image for a simple.NET Core application,and then learn how to run that 
+ container locally on your local work station.
+we take that container image PUSH that Image into AZURE Container Registry
+Azure Container Registry service based on the Open Source Docker Registry.
+allowing you to build , store and manage container images for your 
+container-based application deployments.
+And take that container Image run in Azure Container Instances
+
+--Azure container instances allow us to run one or more containers in Azures with no servers
+
+Container Fundamentals
+
+Our Programs --> packaged into binaries,libraries and other components
+deployable Binary package called a container image.
+A running instance of a container image is called a container,
+Inside that container is your running application.
+One application inside of a container as the container image.
+container image becomes the deployment mechanism for your application
+container images very small and very portable.
+Container Registries - enables exchanging of container images.
+
+
+For year we have been buying and deploying physical servers and Hypervisor
+on top of that hardware.We then created virtual machines and installed full operating systems 
+on those VMs and then deployed our applications on top of each of these 
+Virtual machines.
+This model was great for increasing hardware utilization by increasing 
+--> maintenance tasks
+
+Operating systems and deployment times for VMs and apps was very 
+slow and often manual.
+
+This can be a either physical or virtual machine.you then install an operating system 
+on top of that.From there , you deploy a container runtime which enables you to virtualize the OS
+and then each container deployed has an isolated view of the underlying operating system and from each other.
+The applications can commute each other over the network.
+
+Since the entire application is contained with that container image.
+starting up the container from a container image.
+
+underlying compute platform as a service so that you can deploy containers without having 
+to worry about any infrastructure,servers or even underlying host operating system
+
+storing container image --> container registry
+running container image as containers in Azure Container Instances
+we will use locally installed Docker tools to build container image, 
+and to do that , we will write a Dockerfile.
+
+We will look at the details of a Docker file in a moment
+Once the Dockerfile is written , you execute the Docker build command 
+and that will create a binary container image stored on the local work 
+station.
+Inside the container image would be the application binaries 
+configuration needed to run the appliction inside a container
+
+DockerFile
+App1
+Binaries/Libraries
+Image
+Build
+Development WORKSTATION
+
+FROM --> start for the DOCKER FILE 
+
+Azure Container Registry(ACR)
+
+Build,store,and manage container images 
+Key Component of building a CI/CD pipeline
+ACR Tasks for Container image automation
+Service tiers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      
+
+
 
 
 
